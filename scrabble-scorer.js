@@ -122,7 +122,7 @@ function transform(oldPointStructure) {
    }
    return points;
 };
-// console.log(transform(oldPointStructure));
+console.log(transform(oldPointStructure));
 
 let newPointStructure = transform(oldPointStructure);
    // letterA: 1,
