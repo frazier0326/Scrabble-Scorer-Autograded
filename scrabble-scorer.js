@@ -69,10 +69,10 @@ function vowelBonusScorer(word) {
 }
 
 function scrabbleScorer(word) {
-   word = word.toUpperCase();
+   word = word.toLowerCase();
    let scrabbleScorerTotal = 0;
    for (let i=0; i<word.length; i++) {
-      scrabbleScorerTotal += newPointStructure[Number(word[i])];
+      scrabbleScorerTotal += newPointStructure[word[i]];
    }
    return scrabbleScorerTotal;
 }
